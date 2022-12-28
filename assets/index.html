@@ -8,6 +8,11 @@
     <title>Let's go</title>
 </head>
 <body>
-Let's go
+    <form action="http://localhost:8080/process?first_name=Nick" method="post" enctype="multipart/form-data">
+        <input type="text" name="first_name"/></br>
+        <input type="text" name="last_name"/></br>
+        <input type="file" name="uploaded"/></br>
+        <input type="submit">
+    </form>
 </body>
 </html>
