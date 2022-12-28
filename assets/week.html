@@ -10,6 +10,8 @@
 <body>
     {{ range . }}
     <li>{{ . }}</li>
+    {{ else }}
+    <li> Nothing to show </li>
     {{ end }}
 </body>
 </html>

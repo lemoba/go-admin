@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>t1</title>
+</head>
+<body>
+    <div>This is t1.html</div>
+    <div>This is the value of the dot in t1.html - [{{ . }}]</div>
+    <hr />
+    {{ template "t2.html" . }}
+    <hr />
+    <div>This is t1.html after</div>
+    <div style="background: bisque">
+        {{ 12.22 | printf "%.2f" }}
+    </div>
+    <div style="background:">
+        {{ 12.22 | printf "%.2f" }}
+    </div>
+</body>
+</html>

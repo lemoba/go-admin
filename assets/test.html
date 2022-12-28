@@ -8,10 +8,17 @@
     <title>Action</title>
 </head>
 <body>
-    {{ if . }}
-    Number is greater than 5!
-    {{ else }}
-    Number is 5 or less!
-    {{ end }}
+<!--    {{ if . }}-->
+<!--    Number is greater than 5!-->
+<!--    {{ else }}-->
+<!--    Number is 5 or less!-->
+<!--    {{ end }}-->
+    <div>The dot is {{ . }}</div>
+    <div>
+        {{ with "world" }}
+        Now the dot is set to {{ . }}
+        {{ end }}
+    </div>
+    <div>The dot is {{ . }} again</div>
 </body>
 </html>
