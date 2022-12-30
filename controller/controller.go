@@ -8,4 +8,6 @@ func RegisterRoutes() {
 	registerHomeRoutes()
 	registerCompanyRoutes()
 	registerTestRoutes()
+	registerJsonRoutes()
+	registerUserRoutes()
 }
